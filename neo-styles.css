@@ -778,6 +778,50 @@ body[data-theme="dark"] .job-desc i {
   box-shadow: 0 0 0 var(--border);
 }
 
+/* Hamburger - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  background: var(--white);
+  border: 3px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 0 var(--border);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 0 var(--border);
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 @media (max-width: 768px) {
   body {
     padding: 10px;
@@ -792,24 +836,52 @@ body[data-theme="dark"] .job-desc i {
     overflow-x: hidden;
   }
 
-  .nav-right {
-    gap: 0.5rem;
-  }
-
-  .nav-link {
+  .progress-bar-container {
     display: none;
   }
 
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-content {
+    flex-wrap: wrap;
+  }
+
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 3px solid var(--border);
+    margin-top: 0.5rem;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
   .nav-cta {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
     min-height: 36px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
   }
 
   .theme-toggle-nav {
     padding: 0.4rem 0.8rem;
     min-height: 36px;
     font-size: 0.9rem;
+    width: 100%;
   }
 
   .navbar {

@@ -295,7 +295,12 @@
       <nav class="navbar">
         <div class="nav-content">
           <a href="#" class="nav-brand">PA</a>
-          <div class="nav-right">
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <div class="nav-right" id="nav-right">
             <a href="#hero" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#skills" class="nav-link">Skills</a>
@@ -948,6 +953,23 @@
         history.scrollRestoration = "manual";
       }
       window.scrollTo(0, 0);
+
+      // Hamburger menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const navRight = document.getElementById("nav-right");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navRight.classList.toggle("open");
+      });
+      // Close menu when a nav link is clicked
+      document
+        .querySelectorAll(".nav-right .nav-link, .nav-right .nav-cta")
+        .forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navRight.classList.remove("open");
+          });
+        });
 
       // Loading Screen
       window.addEventListener("load", () => {
