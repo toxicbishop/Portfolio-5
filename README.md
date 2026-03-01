@@ -4,8 +4,6 @@ A neo-brutalist personal portfolio built with vanilla HTML, CSS, and JavaScript.
 
 This is a personal fun project, not a production template. The code prioritizes creativity and experimentation over best practices. It's a playground for trying out ideas, animations, and interactions - not a reference architecture.
 
-**[Live Site](https://dsa-study-hub.vercel.app/)**
-
 ## What is Neo-Brutalism?
 
 Neo-brutalism (also called neo-brutalist web design) is a UI style inspired by brutalist architecture - raw, bold, and unapologetically loud. It rejects the polished, rounded, drop-shadowed sameness of modern web design and replaces it with:
@@ -54,7 +52,7 @@ The palette uses CSS custom properties for light/dark theming:
 
 ## Terminal Mode
 
-Visit [/terminal.html](https://dsa-study-hub.vercel.app/terminal.html) for an interactive terminal-style resume.
+Visit [terminal.html](terminal.html) for an interactive terminal-style resume.
 
 Features:
 
