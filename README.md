@@ -62,6 +62,12 @@ Features:
 - Built-in Snake game (via p5.js)
 - Command history with arrow keys
 
+## Screenshots
+
+| Landing Page                                       | About Me                                   | Projects                                    |
+| -------------------------------------------------- | ------------------------------------------ | ------------------------------------------- |
+| ![Landing Page](image/screenshots/landingpage.png) | ![About Me](image/screenshots/aboutme.png) | ![Projects](image/screenshots/projects.png) |
+
 ## Project Structure
 
 ```
