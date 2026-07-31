@@ -1,6 +1,6 @@
-# Rohith Galoth - Web Development Portfolio
+# Pranav Arun - Web Development Portfolio
 
-Welcome to the documentation for Rohith Galoth's Developer Portfolio. This project is a modern web development portfolio built to showcase a combination of high-quality design and robust technical implementation. It features seamless animations, responsive design, and an immersive user experience.
+Welcome to the documentation for Pranav Arun's Developer Portfolio. This project is a modern web development portfolio built to showcase a combination of high-quality design and robust technical implementation. It features seamless animations, responsive design, and an immersive user experience.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -25,7 +25,7 @@ This portfolio is a carefully crafted digital experience demonstrating advanced 
 *A quick preview of the interactive portfolio and its dynamic animations.*
 
 ## Live Demo
-[View Live Portfolio](https://web-devlopment-portfolio.vercel.app)
+[View Live Portfolio](https://github.com/toxicbishop/Portfolio-5)
 
 ## Features
 
@@ -77,7 +77,7 @@ portfolio/
 ### Local Development
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Rohithgaloth/web-devlopment-portfolio.git
+   git clone https://github.com/toxicbishop/Portfolio-5.git
    ```
 2. Install dependencies:
    ```bash
@@ -118,8 +118,8 @@ The portfolio uses a CSS custom properties-based color system:
 The repository is set up for easy deployment on modern hosting platforms such as Vercel, Netlify, or GitHub Pages. Ensure the build command `pnpm build` is executed and the `dist/` output directory is served.
 
 ## Contact
-**Rohith Galoth**
-- GitHub: [Rohithgaloth](https://github.com/Rohithgaloth)
-- LinkedIn: [Rohith Galoth](https://www.linkedin.com/in/rohithgaloth)
-- Instagram: [@r_r_o_h_i_t_h_](https://www.instagram.com/r_r_o_h_i_t_h_)
-- Phone: +91 8310793348
+**Pranav Arun**
+- GitHub: [toxicbishop](https://github.com/toxicbishop)
+- LinkedIn: [Pranav Arun](https://www.linkedin.com/in/pranav-arun)
+- Instagram: [@toxicbishop_](https://www.instagram.com/toxicbishop_)
+- Email: pranavarun19@gmail.com
