@@ -15,17 +15,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Select hero image element
   const heroImg = document.querySelector(".hero-img img");
-  let currentImageIndex = 1; // Tracks current image in sequence
-  const totalImages = 10; // Total number of images for cycling
+  let currentImageIndex = 0; // Tracks current image in sequence
+
+  const projectImages = [
+    "/images/work-items/kssem-Clg-ERP-Dashboard.png",
+    "/images/work-items/IPL-Dashboard.png",
+    "/images/work-items/Dashboard-Chain-of-Thought.png",
+    "/images/work-items/nanoGPT-interface.png",
+    "/images/work-items/chat-bot.png",
+    "/images/work-items/weather-cli-gif.gif",
+    "/images/work-items/Dsa-Study-Hub-Homepage.png",
+    "/images/work-items/CRYPTVAULT.png",
+    "/images/work-items/voting-system.png",
+    "/images/work-items/costoflivingbenagluru.png"
+  ];
+  const totalImages = projectImages.length; // Total number of images for cycling
   let scrollTriggerInstance = null; // Stores ScrollTrigger instance for cleanup
 
   // Cycle through images every 250ms
   setInterval(() => {
-    // Increment image index, reset to 1 if it exceeds totalImages
-    currentImageIndex =
-      currentImageIndex >= totalImages ? 1 : currentImageIndex + 1;
+    // Increment image index, reset to 0 if it reaches totalImages
+    currentImageIndex = (currentImageIndex + 1) % totalImages;
     // Update hero image source
-    heroImg.src = `/images/work-items/work-item-${currentImageIndex}.jpg`;
+    heroImg.src = projectImages[currentImageIndex];
   }, 250);
 
   // Initialize animations with ScrollTrigger

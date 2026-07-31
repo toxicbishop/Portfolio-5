@@ -24,11 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
     outEasing: "cubic-bezier(.87, 0, .13, 1)", // Easing for image removal
   };
 
-  // Define image paths for trail
-  const images = Array.from(
-    { length: config.imageCount },
-    (_, i) => `/images/work-items/work-item-${i + 1}.jpg` // Paths to images (work-item-1.jpg to work-item-8.jpg)
-  );
+  const images = [
+    "/images/work-items/kssem-Clg-ERP-Dashboard.png",
+    "/images/work-items/IPL-Dashboard.png",
+    "/images/work-items/Dashboard-Chain-of-Thought.png",
+    "/images/work-items/nanoGPT-interface.png",
+    "/images/work-items/chat-bot.png",
+    "/images/work-items/weather-cli-gif.gif",
+    "/images/work-items/Dsa-Study-Hub-Homepage.png",
+    "/images/work-items/CRYPTVAULT.png",
+    "/images/work-items/voting-system.png",
+    "/images/work-items/costoflivingbenagluru.png"
+  ];
+  config.imageCount = images.length;
   const trail = []; // Store active trail images
 
   // Track mouse position and state

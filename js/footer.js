@@ -23,11 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   
     // Define particle images
-    const imageParticleCount = 10; // Number of particle images
-    const imagePaths = Array.from(
-      { length: imageParticleCount },
-      (_, i) => `/images/work-items/work-item-${i + 1}.jpg` // Paths to images (work-item-1.jpg to work-item-10.jpg)
-    );
+    const imagePaths = [
+      "/images/work-items/kssem-Clg-ERP-Dashboard.png",
+      "/images/work-items/IPL-Dashboard.png",
+      "/images/work-items/Dashboard-Chain-of-Thought.png",
+      "/images/work-items/nanoGPT-interface.png",
+      "/images/work-items/chat-bot.png",
+      "/images/work-items/weather-cli-gif.gif",
+      "/images/work-items/Dsa-Study-Hub-Homepage.png",
+      "/images/work-items/CRYPTVAULT.png",
+      "/images/work-items/voting-system.png",
+      "/images/work-items/costoflivingbenagluru.png"
+    ];
+    const imageParticleCount = imagePaths.length;
   
     // Preload images to avoid delays
     imagePaths.forEach((path) => {
