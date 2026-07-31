@@ -25,7 +25,7 @@ This portfolio is a carefully crafted digital experience demonstrating advanced 
 *A quick preview of the interactive portfolio and its dynamic animations.*
 
 ## Live Demo
-[View Live Portfolio](https://github.com/toxicbishop/Portfolio-5)
+[View Live Portfolio](https://portfolio-5-liart.vercel.app)
 
 ## Features
 
