@@ -1,0 +1,49 @@
+version: 2
+
+updates:
+  # pnpm / npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "UTC"
+
+    open-pull-requests-limit: 5
+
+    commit-message:
+      prefix: "deps"
+
+    labels:
+      - "dependencies"
+
+    reviewers:
+      - "toxicbishop"
+
+    assignees:
+      - "toxicbishop"
+
+    versioning-strategy: increase
+
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react*"
+
+      dev-dependencies:
+        dependency-type: "development"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+
+    commit-message:
+      prefix: "ci"
+
+    labels:
+      - "github-actions"
