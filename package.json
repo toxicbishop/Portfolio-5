@@ -1,0 +1,24 @@
+{
+  "name": "toxicbishop-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for toxicbishop",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "host": "vite --host"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "vite"
+  ],
+  "author": "toxicbishop",
+  "license": "MIT",
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.3",
+    "vite": "^8.2.0"
+  }
+}
